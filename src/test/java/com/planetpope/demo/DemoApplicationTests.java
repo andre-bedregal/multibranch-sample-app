@@ -14,7 +14,7 @@ class DemoApplicationTests {
 
 	@Test
 	void testFailure() {
-		assertTrue(true);
+		assertFalse(false);
 	}
 
 }
