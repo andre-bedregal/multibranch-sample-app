@@ -1,5 +1,7 @@
 pipeline {
-  agent {label 'linux'}
+  agent {
+    docker { image 'gradle:6.7.1' }
+  }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
